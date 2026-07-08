@@ -276,3 +276,85 @@
     line-height:1.02;
   }
 }
+
+/* Mobile experience fix: all columns visible, no horizontal hiding */
+@media(max-width:640px){
+  .experience{
+    display:grid;
+    grid-template-columns:42% 29% 29%;
+    width:100%;
+    overflow:visible;
+    scroll-snap-type:none;
+  }
+  .experience-copy,
+  .moments article{
+    scroll-snap-align:none;
+  }
+  .experience-copy{
+    min-height:430px;
+    padding:34px 14px 28px;
+    justify-content:center;
+  }
+  .experience-copy>span{
+    font-size:8px;
+    letter-spacing:.16em;
+  }
+  .experience h2{
+    font-size:32px;
+    line-height:.9;
+    letter-spacing:-.05em;
+  }
+  .experience-copy>p{
+    margin:16px 0;
+    font-size:11px;
+    line-height:1.45;
+  }
+  .chips{
+    gap:5px;
+  }
+  .chips span{
+    padding:6px 7px;
+    font-size:7px;
+  }
+  .moments{
+    display:contents;
+  }
+  .moments article{
+    min-height:430px;
+    padding:30px 12px 26px;
+  }
+  .moments article>b{
+    font-size:9px;
+  }
+  .moments article span{
+    font-size:7px;
+    letter-spacing:.14em;
+  }
+  .moments h3{
+    font-size:22px;
+    line-height:1.02;
+    letter-spacing:-.035em;
+  }
+}
+
+@media(max-width:390px){
+  .experience{
+    grid-template-columns:44% 28% 28%;
+  }
+  .experience-copy{
+    padding-left:12px;
+    padding-right:10px;
+  }
+  .experience h2{
+    font-size:29px;
+  }
+  .experience-copy>p{
+    font-size:10px;
+  }
+  .chips span{
+    font-size:6.5px;
+  }
+  .moments h3{
+    font-size:20px;
+  }
+}
