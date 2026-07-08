@@ -226,3 +226,53 @@
   .hero h1{font-size:43px}
   .hero-copy{bottom:82px}
 }
+
+/* Mobile experience: keep the desktop rhythm */
+@media(max-width:640px){
+  .experience{
+    display:grid;
+    grid-template-columns:78vw 62vw 62vw;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    background:#fff;
+  }
+  .experience::-webkit-scrollbar{
+    display:none;
+  }
+  .experience-copy,
+  .moments article{
+    scroll-snap-align:start;
+  }
+  .experience-copy{
+    min-height:520px;
+    padding:54px 24px 34px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .experience h2{
+    font-size:47px;
+    line-height:.92;
+  }
+  .experience-copy>p{
+    margin:22px 0;
+    font-size:14px;
+    line-height:1.58;
+  }
+  .chips span{
+    padding:8px 10px;
+    font-size:9px;
+  }
+  .moments{
+    display:contents;
+  }
+  .moments article{
+    min-height:520px;
+    padding:34px 24px;
+  }
+  .moments h3{
+    font-size:30px;
+    line-height:1.02;
+  }
+}
