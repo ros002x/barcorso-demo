@@ -1,16 +1,20 @@
 ﻿const menus = {
   breakfast: [
+    ['Caff&egrave; espresso', 'Classico al banco o al tavolo.', '&euro; --'],
     ['Cornetti caldi', 'La partenza giusta, dal mattino presto.', '&euro; --'],
     ['Pasticciotto', 'Crema e amarena, con espressino.', '&euro; --'],
+    ['Espressino', 'Perfetto con il dolce della mattina.', '&euro; --'],
     ['Crepe Nutella', 'Con Nutella e granella.', '&euro; --']
   ],
   fresh: [
     ['Crema caff&egrave;', 'Fresca e cremosa.', '&euro; --'],
-    ['Yogurt', 'Per una pausa pi&ugrave; leggera.', '&euro; --']
+    ['Yogurt', 'Per una pausa pi&ugrave; leggera.', '&euro; --'],
+    ['Bibite fresche', 'Chiedi cosa trovi al banco.', '&euro; --']
   ],
   aperitivo: [
     ['Spritz', 'Preparato al momento.', '&euro; --'],
     ['Drink', 'Chiedi la proposta del banco.', '&euro; --'],
+    ['Aperitivo', 'Da prendere fuori, davanti alla piazza.', '&euro; --'],
     ['Stuzzichini', 'Da condividere al tavolo.', '&euro; --']
   ]
 };
