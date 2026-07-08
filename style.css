@@ -358,3 +358,9 @@
     font-size:20px;
   }
 }
+
+/* Instagram event CTA */
+.events-copy .btn-cream{
+  gap:0;
+  white-space:nowrap;
+}
